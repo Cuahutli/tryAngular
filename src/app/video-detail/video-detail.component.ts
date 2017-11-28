@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'video-detail',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-detail.component.css']
 })
 export class VideoDetailComponent implements OnInit {
-
-  constructor() { }
+  private routeSub:any;
+  slug:string;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.routeSub = this.route.params.subscribe(params =>{
+      //console.log(params);
+      this.slug = params.slug;
+    }) //observable
+  }
+
+  ngOnDestroy(){
+    this.routeSub.unsubscribe()
   }
 
 }
