@@ -14,12 +14,12 @@ export class VideoListComponent implements OnInit {
       slug: "item-1"
     },
     {
-      name: "Item 1",
-      slug: "item-1"
+      name: "Item 2",
+      slug: "item-2"
     },
     {
-      name: "Item 1",
-      slug: "item-1"
+      name: "Item 3",
+      slug: "item-3"
     }
   ]
   constructor() { }
