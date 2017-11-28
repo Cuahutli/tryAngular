@@ -1,3 +1,11 @@
-<p>
+<h1>
   {{ title }}
+</h1>
+<hr>
+
+<p *ngFor='let item of videoList'>
+  {{item.name}}
+  <a href="{{item.slug}}">{{item.slug}}</a>
 </p>
+
+
