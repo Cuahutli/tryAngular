@@ -1,10 +1,13 @@
 <h1>
-  {{ title }}
+  {{ title }} {{date| date:"short"}}
 </h1>
 <div *ngFor='let item of videoList'>
   <a href="videos/{{item.slug}}">{{item.name}}</a>
-  <div>
-      <iframe width="560" height="315" [src]="getEmbedUrl(item.youtube_id)" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  <div  *ngIf='item.youtube_id'>
+      <iframe width="560" height="315" [src]="item.youtube_id | safe" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div *ngIf='!item.youtube_id'>
+    <p>No hay video disponible para {{item.name }}</p>
   </div>
 </div>
 
