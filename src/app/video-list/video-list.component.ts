@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
-
+  title = 'Un nuevo componente'
   constructor() { }
 
   ngOnInit() {
