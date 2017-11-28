@@ -1,9 +1,11 @@
 <h1>
   {{ title }}
 </h1>
-<p *ngFor='let item of videoList'>
-  {{item.name}}
-  <a href="videos/{{item.slug}}">{{item.slug}}</a>
-</p>
+<div *ngFor='let item of videoList'>
+  <a href="videos/{{item.slug}}">{{item.name}}</a>
+  <div>
+      <iframe width="560" height="315" [src]="getEmbedUrl(item.youtube_id)" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
 
 
