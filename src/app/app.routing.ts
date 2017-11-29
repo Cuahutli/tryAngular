@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
@@ -19,6 +19,8 @@ const appRoutes: Routes = [
     }
 ]
 
+export const APP_ROUTING = RouterModule.forRoot( appRoutes, {useHash:false});
+/* 
 @NgModule({
     imports: [
         RouterModule.forRoot(
@@ -30,4 +32,4 @@ const appRoutes: Routes = [
     ]
 })
 
-export class AppRoutingModule(){}
+export class AppRoutingModule(){} */

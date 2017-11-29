@@ -9,9 +9,12 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 
 
-import { AppRoutingModule } from './app.routing';
+import { APP_ROUTING } from './app.routing';
 import { SafePipe } from './utility/safe.pipe';
 
+
+/* Imports de terceros */
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { SafePipe } from './utility/safe.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    APP_ROUTING,
+    /* imports de terceros */
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
