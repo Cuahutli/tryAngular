@@ -18,6 +18,7 @@ import { APP_ROUTING } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { SearchComponent } from './search/search.component';
+import { SearchDetailComponent } from './search-detail/search-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SearchComponent } from './search/search.component';
     SafePipe,
     VideoListComponent,
     VideoDetailComponent,
-    SearchComponent
+    SearchComponent,
+    SearchDetailComponent
   ],
   imports: [
     BrowserModule,
