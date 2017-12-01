@@ -2,16 +2,25 @@
     {
         "name": "Welcome",
         "slug": "item-1",
-        "youtube_id": "9wc8Gv8X49U"
+        "youtube_id": "9wc8Gv8X49U",
+        "image": "assets/images/nature/4.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
     },
     {
         "name": "Item 2",
         "slug": "item-2",
-        "youtube_id": "8QOzAmWyouA"
+        "youtube_id": "8QOzAmWyouA",
+        "image": "assets/images/nature/4.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
     },
     {
         "name": "Item 3",
         "slug": "item-3",
-        "youtube_id": "fOuKO2dVU0U"
+        "youtube_id": "fOuKO2dVU0U",
+        "image": "assets/images/nature/4.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":false
     }
 ]
