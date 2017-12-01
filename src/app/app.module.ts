@@ -17,6 +17,7 @@ import { APP_ROUTING } from './app.routing';
 /* Imports de terceros */
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     HomeComponent,
     SafePipe,
     VideoListComponent,
-    VideoDetailComponent
+    VideoDetailComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
