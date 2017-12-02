@@ -11,15 +11,15 @@ export class SearchDetailComponent implements OnInit {
   query:string;
   constructor(private route:ActivatedRoute) { }
 
+  ngOnDestroy(){
+    this.routeSub.unsubscribe();
+  }
+
   ngOnInit() {
     this.routeSub = this.route.params.subscribe(params=>{
       console.log(params);
       this.query = params['q'];
     })
-  }
-
-  ngOnDestroy(){
-    this.routeSub.unsubscribe();
   }
 
 }
