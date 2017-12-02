@@ -1,30 +1,26 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Http } from '@angular/http';
+
+import { VideoService } from "../videos/video.service";
 
 @Component({
   selector: 'video-detail',
   templateUrl: './video-detail.component.html',
-  styleUrls: ['./video-detail.component.css']
+  styleUrls: ['./video-detail.component.css'],
+  providers: [VideoService]
 })
 export class VideoDetailComponent implements OnInit {
   private routeSub:any;
   private req:any;
   slug:string;
   video:any;
-  constructor(private route: ActivatedRoute, private _http:Http) { }
+  constructor(private route: ActivatedRoute, private _videos:VideoService) { }
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe(params =>{
-      //console.log(params);
       this.slug = params.slug;
-      this._http.get("assets/json/videos.json").subscribe(data=>{
-        data.json().filter(item=>{
-          if (item.slug == this.slug ){
-            console.log(item);
-            this.video = item
-          }
-        })
+      this.req = this._videos.get(this.slug).subscribe(data=>{
+        this.video = data;
       })
     }) //observable
   }

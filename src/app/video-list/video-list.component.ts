@@ -1,10 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Http } from "@angular/http";
+import { VideoService } from "../videos/video.service";
 
 @Component({
   selector: 'video-list',
   templateUrl: './video-list.component.html',
-  styleUrls: ['./video-list.component.css']
+  styleUrls: ['./video-list.component.css'],
+  providers: [VideoService]
 })
 export class VideoListComponent implements OnInit {
   private req:any;
@@ -12,16 +13,15 @@ export class VideoListComponent implements OnInit {
   date;
   videoList:[any];
   //videoList = ["Item 1", "Item 2", "Item 3"]; //JSON
-  constructor(private _http:Http) { }
+  constructor(private _video:VideoService)  { }
 
   ngOnInit() {
     this.date = new Date()
-    this.req = this._http.get("assets/json/videos.json").subscribe(data=>{
-      console.log(data.json());
-      this.videoList = data.json() as [any];
+    this.req = this._video.list().subscribe(data=>{
+      this.videoList = data as [any];
     });
   }
-
+s
   ngOnDestroy(){
     this.req.unsubscribe();
   }
