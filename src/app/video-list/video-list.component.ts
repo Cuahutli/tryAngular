@@ -17,9 +17,12 @@ export class VideoListComponent implements OnInit {
 
   ngOnInit() {
     this.date = new Date()
+    /* this.req = this._video.list().subscribe(data=>{
+      this.videoList = data as [any];
+    }); */
     this.req = this._video.list().subscribe(data=>{
       this.videoList = data as [any];
-    });
+    })
   }
 s
   ngOnDestroy(){
