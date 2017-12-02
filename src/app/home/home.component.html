@@ -2,13 +2,13 @@
   <div class="col-sm-12">
     <carousel class="text-center" *ngIf="homeImageList">
       <slide *ngFor="let imageObj of homeImageList">
-        <a class="" href="videos/{{imageObj.slug}}" (click)="preventNormal($event, imageObj)">
+        <a class="" routerLink="videos/{{imageObj.slug}}" routerLinkActive="active"  (click)="preventNormal($event, imageObj)">
           <img  class="img-main-carousel" [src]="imageObj.image" [alt]="imageObj.name" style="display: block; width: 100%;">
         </a>
         <div class="carousel-caption">
           <h3>{{ imageObj.name }}</h3>
           <p>{{imageObj.description}}</p>
-          <p><a class="btn btn-default" href="videos/{{imageObj.slug}}"> {{imageObj.name }}</a></p>
+          <p><a class="btn btn-default" routerLink="videos/{{imageObj.slug}}" routerLinkActive="active" > {{imageObj.name }}</a></p>
         </div>
       </slide>
     </carousel>

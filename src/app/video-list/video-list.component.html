@@ -2,7 +2,7 @@
   {{ title }} {{date| date:"short"}}
 </h1>
 <div *ngFor='let item of videoList'>
-  <a href="videos/{{item.slug}}">{{item.name}}</a>
+  <a routerLink="/videos/{{item.slug}}" routerLinkActive="active">{{item.name}}</a>
   <div  *ngIf='item.youtube_id'>
       <iframe width="560" height="315" [src]="item.youtube_id | safe" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
