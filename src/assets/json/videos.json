@@ -1,24 +1,96 @@
 [
     {
-        "name": "Welcome",
-        "slug": "Welcome",
+        "name": "Try Angular v4 // 1 of 28 // Welcome to Try Angular v4",
+        "slug": "Welcome to Try Angular v4",
         "youtube_id": "9wc8Gv8X49U",
+        "image": "assets/images/nature/1.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 2 of 28 // Getting Started",
+        "slug": "Getting Started",
+        "youtube_id": "8QOzAmWyouA",
+        "image": "assets/images/nature/2.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 3 of 28 // App Module & Component",
+        "slug": "App Module & Component",
+        "youtube_id": "fOuKO2dVU0U",
+        "image": "assets/images/nature/3.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 4 of 28 // Ng Generate New Component",
+        "slug": "Ng Generate New Component",
+        "youtube_id": "XGEsZmoZNbw",
         "image": "assets/images/nature/4.jpg",
         "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
         "featured":true
     },
     {
-        "name": "Item 2",
-        "slug": "item-2",
-        "youtube_id": "8QOzAmWyouA",
+        "name": "Try Angular v4 // 5 of 28 // Selectors & Components",
+        "slug": "Selectors & Components",
+        "youtube_id": "E1lSYoLf5P4",
         "image": "assets/images/nature/5.jpg",
         "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
         "featured":true
     },
     {
-        "name": "Item 3",
-        "slug": "item-3",
-        "youtube_id": "fOuKO2dVU0U",
+        "name": "Try Angular v4 // 6 of 28 // ngFor and ngIf",
+        "slug": "ngFor and ngIf",
+        "youtube_id": "uBeDt_poi00",
+        "image": "assets/images/nature/6.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 7 of 28 // Mapping Urls with RouterModule",
+        "slug": "Mapping Urls with RouterModule",
+        "youtube_id": "1GnMB9ge6tg",
+        "image": "assets/images/nature/7.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 8 of 28 // Dynamic Routing of Components",
+        "slug": "Dynamic Routing of Components",
+        "youtube_id": "N0ldJ9jITE8",
+        "image": "assets/images/nature/8.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 9 of 28 // Safely Embed a Video",
+        "slug": "Safely Embed a Video",
+        "youtube_id": "6wD4V0rvlDI",
+        "image": "assets/images/nature/1.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 10 of 28 // Pipes & Custom Pipes",
+        "slug": "Pipes & Custom Pipes",
+        "youtube_id": "nzyJ9imm29w",
+        "image": "assets/images/nature/2.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 11 of 28 // Rapid Bootstrap 3 Overview",
+        "slug": "Rapid Bootstrap 3 Overview",
+        "youtube_id": "lYvmbQiFnXE",
+        "image": "assets/images/nature/3.jpg",
+        "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "featured":true
+    },
+    {
+        "name": "Try Angular v4 // 12 of 28 // Bootstrap for Angular // ngx bootstrap",
+        "slug": "ngx bootstrap",
+        "youtube_id": "BlGh1WbOC14",
         "image": "assets/images/nature/6.png",
         "description":"Nulla vitae elit libero, a pharetra augue mollis interdum.",
         "featured":true
