@@ -26,10 +26,12 @@ export class VideoListComponent implements OnInit {
       this.videoList = data as [VideoItem];
     })
   }
-s
+
   ngOnDestroy(){
     this.req.unsubscribe();
   }
+
+  
 
   
 

@@ -14,6 +14,7 @@ import { VideoService } from "../videos/video.service";
 export class HomeComponent implements OnInit {
   private req:any;
   homeImageList:[VideoItem] = [] as [VideoItem];
+  videoListDefaultImage = "assets/images/videos/1.jpg";
   constructor(private router:Router, private _video:VideoService) { }
 
   ngOnInit() {
