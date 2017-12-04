@@ -10,19 +10,23 @@ import { SearchDetailComponent} from './search-detail/search-detail.component'
 const appRoutes: Routes = [
     {
         path:"",
-        component: HomeComponent
+        component: HomeComponent,
+        pathMatch: 'full'
     },
     {
         path:"videos",
-        component: VideoListComponent
+        component: VideoListComponent,
+        pathMatch: 'full'
     },
     {
         path:"videos/:slug",
-        component: VideoDetailComponent
+        component: VideoDetailComponent,
+        pathMatch: 'full'
     },
     {
         path:"search",
-        component: SearchDetailComponent
+        component: SearchDetailComponent,
+        pathMatch: 'full'
     }
 ]
 
